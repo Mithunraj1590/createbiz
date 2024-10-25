@@ -116,3 +116,27 @@
 .home-business-setup .flip-card-back ul li + li {
   margin-top: 15px;
 }
+
+.home-services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.home-services .service-top .sub-title {
+  margin-bottom: 15px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  color: #29B574;
+  font-family: "Saira", sans-serif;
+}
+.home-services .service-top .title {
+  color: #013346;
+  margin: auto;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-bottom: 25px;
+}
+.home-services .service-top p {
+  font-size: 18px;
+}
