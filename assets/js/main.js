@@ -92,6 +92,24 @@ window.addEventListener("load", () => {
 }, false);
 
 
+// fun fact
 
+document.addEventListener("DOMContentLoaded", function () {
+    const timers = document.querySelectorAll(".timer");
 
+    timers.forEach(timer => {
+        const targetNumber = parseInt(timer.getAttribute("data-to"));
+        const duration = parseInt(timer.getAttribute("data-speed"));
+        const increment = targetNumber / (duration / 10);
 
+        let currentNumber = 0;
+        const interval = setInterval(() => {
+            currentNumber += increment;
+            if (currentNumber >= targetNumber) {
+                currentNumber = targetNumber;
+                clearInterval(interval);
+            }
+            timer.textContent = Math.floor(currentNumber);
+        }, 10);
+    });
+});

@@ -1,8 +1,8 @@
 
-@import 'utilities/variable';
+
 @import 'utilities/headings';
 @import 'utilities/font-kit';
-@import 'utilities/buttons';
+
 @import 'mixins/mixins';
 @import 'mixins/root-mixins';
 
@@ -14,5 +14,6 @@
 @import './components/header';
 @import './components/footer';
 
-
+@import 'utilities/variable';
+@import 'utilities/buttons';
 

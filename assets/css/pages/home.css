@@ -27,7 +27,7 @@
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  color: #29B574;
+  color: #EB2227;
   font-family: "Saira", sans-serif;
 }
 .home-business-setup .title {
@@ -126,7 +126,7 @@
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  color: #29B574;
+  color: #EB2227;
   font-family: "Saira", sans-serif;
 }
 .home-services .service-top .title {
@@ -138,5 +138,214 @@
   margin-bottom: 25px;
 }
 .home-services .service-top p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.home-services .service-list {
+  margin-top: 70px;
+}
+.home-services .service-list .card {
+  padding: 0 50px 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: none;
+}
+.home-services .service-list .card .icon {
+  width: 90px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90px;
+          flex: 0 0 90px;
+  height: 90px;
+  background-color: rgba(8, 106, 216, 0.07);
+  border-radius: 100%;
+}
+.home-services .service-list .card .info {
+  padding-left: 30px;
+}
+.home-services .service-list .card .info .title {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.home-about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ecf6fa;
+}
+.home-about .achivement {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  height: 450px;
+  width: 450px;
+  margin-left: 35px;
+  margin-top: 15px;
+}
+.home-about .achivement li {
+  display: inline-block;
+  background: #ecf6fa;
+  padding: 16px 0;
+  min-width: 180px;
+}
+.home-about .achivement li:first-child {
+  text-align: center;
+  position: relative;
+  top: -40px;
+}
+.home-about .achivement li:first-child .fun-fact {
+  text-align: center;
+}
+.home-about .achivement li:first-child .fun-fact .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: #013346;
+  line-height: 1.2;
+}
+.home-about .achivement li:nth-child(2) {
+  position: absolute;
+  left: -60px;
+  bottom: 80px;
+}
+.home-about .achivement li:nth-child(2) .fun-fact {
+  text-align: center;
+}
+.home-about .achivement li:nth-child(2) .fun-fact .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: #29B574;
+  line-height: 1.2;
+}
+.home-about .achivement li:last-child {
+  position: absolute;
+  right: -60px;
+  bottom: 80px;
+}
+.home-about .achivement li:last-child .fun-fact {
+  text-align: center;
+}
+.home-about .achivement li:last-child .fun-fact .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #F39321;
+}
+.home-about .achivement::after {
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  content: "";
+  border: 2px dashed #cccccc;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-animation: rotate-animation 30s infinite linear;
+          animation: rotate-animation 30s infinite linear;
+}
+.home-about .content .sub-title {
+  margin-bottom: 15px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  color: #EB2227;
+  font-family: "Saira", sans-serif;
+}
+.home-about .content .title {
+  color: #013346;
+  margin: auto;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-bottom: 25px;
+}
+.home-about .content p {
   font-size: 18px;
+}
+.home-about .content ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+.home-about .content ul li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.home-about .content ul li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "N";
+  font-family: "ElegantIcons";
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #EB2227;
+}
+.home-about .content ul li + li {
+  margin-top: 15px;
+}
+.home-about .content .experince {
+  font-size: 80px;
+  line-height: 1.2;
+}
+.home-about .content .experince span {
+  font-size: 18px;
+  display: block;
+  font-weight: 400;
+  font-family: "Saira", sans-serif;
+}
+
+@-webkit-keyframes rotate-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
