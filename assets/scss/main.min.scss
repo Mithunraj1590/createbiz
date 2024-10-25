@@ -1,0 +1,18 @@
+
+@import 'utilities/variable';
+@import 'utilities/headings';
+@import 'utilities/font-kit';
+@import 'utilities/buttons';
+@import 'mixins/mixins';
+@import 'mixins/root-mixins';
+
+// bootstrap
+@import 'bootstrap/bootstrap';
+// Resets
+@import 'utilities/resets';
+
+@import './components/header';
+@import './components/footer';
+
+
+
