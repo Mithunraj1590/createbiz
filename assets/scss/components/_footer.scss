@@ -4,12 +4,26 @@
 .footer{
     background-color: $primary;
     position: relative;
-    z-index: 2223;
+    z-index: 2;
     padding-top: 100px;
+    overflow: hidden;
     &-about{
         &-title{
             color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            position: relative;
+            font-size: 20px;
+            &::before{
+                position: absolute;
+                content: "";
+                left: -16px;
+                top: -10px;
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                background-color: #ffffff;
+                opacity: .1;
+            }
         }
         p{
             color: #fff;
@@ -20,9 +34,24 @@
         width: 100%;
         justify-content: space-between;
         padding-left: 70px;
+        padding-inline-end: 60px;
         .menu-items{
             .menu-title{
                 color: #fff;
+                position: relative;
+                margin-bottom: 30px;
+                font-size: 20px;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: -16px;
+                    top: -10px;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 100%;
+                    background-color: #ffffff;
+                    opacity: .1;
+                }
             }
             ul{
                 display: none;
@@ -33,6 +62,24 @@
                     a{
                         color: #fff;
                         text-decoration: none;
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            color: $secondary-color;
+                        }
+                    }
+                    &+li{
+                        margin-top: 20px;
+                    }
+                    strong{
+                        text-transform: uppercase;
+                        display: block;
+                        margin-bottom: 10px;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                    span{
+                        font-size: 16px;
+                        color: #fff;
                     }
                 }
                 @include min(992){
@@ -47,18 +94,55 @@
         }
     }
     &-bottom{
-        margin-top: 120px;
+        margin-top: 80px;
         padding: 20px 0;
         border-top: 1px solid rgba($color: #fff, $alpha: .1);
         display: flex;
+        align-items: center;
         justify-content: space-between;
         p{
             margin-bottom: 0;
             color: #fff;
             font-size: 14px;
         }
-        figure{
+        .footer-logo{
             margin-bottom: 0;
+            max-width: 80px;
+            height: 50px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
+
+        .form{
+            display: flex;
+            border: 1px solid rgba($color: #fff, $alpha: .2);
+            padding: 5px;
+            .form-control{
+                background-color: transparent;
+                border: none;
+                box-shadow: none;
+                height: 45px;
+                color: #fff;
+            }
+            .submit{
+                width: 60px;
+            }
+        }
+    }
+    &::after{
+        left: -30%;
+    top: 0;
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 1000px;
+    background: linear-gradient(62.5deg, transparent, rgba(74, 196, 243, 0.06));
+    border-radius: 50px;
+    transform: rotate(45deg);
+    z-index: -1;
+    opacity: 0.5;
     }
 }
