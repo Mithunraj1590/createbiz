@@ -8,11 +8,19 @@
     margin: 0 auto;
     left: 0;
     top: 0;
-    height: size(90);
+    height: size(80);
     z-index: 1049;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    @include min(992){
+        height: size(90); 
+    }
 
     .logo{
-        max-width: 250px;
+        max-width: 170px;
+        @include min(992){
+            max-width: 250px; 
+        }
         a{
             display: inline-block;
         }
@@ -55,14 +63,13 @@
                 }
                 &.submenu i:after {
                     content: "";
-                    height: 0;
-                    width: 0;
-                    border-left: size(6) solid transparent;
-                    border-right: size(6) solid transparent;
-                    border-top: size(6) solid $primary-color;
+                    height: 7px;
+                    width: 13px;
+                    background-image: url(/assets/images/arrow.svg);
                     position: absolute;
-                    
-                    right: size(12);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    right: size(7);
                     top: size(14);
 
                     z-index: 10;
@@ -167,15 +174,14 @@
         display: block;
         position: fixed;
         max-width: 100%;
-        top: size(70);
-        padding: size(45);
-        padding-top: size(35);
+        top: size(91);
+        padding: size(15);
+        padding-top: size(15);
         right: 0;
-        height: 100%;
+        height: calc(100vh - 91px );
         @include transition(all, ease-in-out, 0.3s);
         z-index: 3;
         width: 100%;
-        height: 100%;
         overflow: auto;
         opacity: 0;
         -webkit-transform: scaleY(0);
@@ -207,7 +213,7 @@
                     font-size: size(16);
                     letter-spacing: 0.05rem;
                     display: block;
-                    padding: 11px 11px;
+                    padding: 15px 11px;
                     font-weight: 500;
                     padding-left: 0;
                     padding-right: 0;
@@ -322,7 +328,7 @@
             width: 100%;
             height: 2px;
             border-radius: 1px;
-            background: gray;
+            background: $primary;
             transition: all 0.3s cubic-bezier(0,0,0.58,1);
         }
 

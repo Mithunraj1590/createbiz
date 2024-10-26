@@ -272,7 +272,7 @@ h6,
 .ttl-40 {
   font-family: "Kanit", sans-serif;
   color: #000;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 @media screen and (min-width: 992px) {
   .ttl-40 {
@@ -288,11 +288,11 @@ h6,
 .ttl-50 {
   font-family: "Kanit", sans-serif;
   color: #000;
-  font-size: 1.5rem;
+  font-size: 2.1875rem;
 }
 @media screen and (min-width: 992px) {
   .ttl-50 {
-    font-size: 1.875rem;
+    font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -10147,11 +10147,24 @@ select.default:focus, select.default:active {
   margin: 0 auto;
   left: 0;
   top: 0;
-  height: 5.625rem;
+  height: 5rem;
   z-index: 1049;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+@media screen and (min-width: 992px) {
+  .main-header {
+    height: 5.625rem;
+  }
 }
 .main-header .logo {
-  max-width: 250px;
+  max-width: 170px;
+}
+@media screen and (min-width: 992px) {
+  .main-header .logo {
+    max-width: 250px;
+  }
 }
 .main-header .logo a {
   display: inline-block;
@@ -10199,13 +10212,13 @@ select.default:focus, select.default:active {
 @media screen and (min-width: 1200px) {
   .main-nav > ul > li.submenu i:after {
     content: "";
-    height: 0;
-    width: 0;
-    border-left: 0.375rem solid transparent;
-    border-right: 0.375rem solid transparent;
-    border-top: 0.375rem solid #013346;
+    height: 7px;
+    width: 13px;
+    background-image: url(/assets/images/arrow.svg);
     position: absolute;
-    right: 0.75rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0.4375rem;
     top: 0.875rem;
     z-index: 10;
   }
@@ -10302,17 +10315,16 @@ select.default:focus, select.default:active {
     display: block;
     position: fixed;
     max-width: 100%;
-    top: 4.375rem;
-    padding: 2.8125rem;
-    padding-top: 2.1875rem;
+    top: 5.6875rem;
+    padding: 0.9375rem;
+    padding-top: 0.9375rem;
     right: 0;
-    height: 100%;
+    height: calc(100vh - 91px);
     transition: all ease-in-out 0.3s;
     -o-transition: all ease-in-out 0.3s;
     -webkit-transition: all ease-in-out 0.3s;
     z-index: 3;
     width: 100%;
-    height: 100%;
     overflow: auto;
     opacity: 0;
     -webkit-transform: scaleY(0);
@@ -10344,7 +10356,7 @@ select.default:focus, select.default:active {
     font-size: 1rem;
     letter-spacing: 0.05rem;
     display: block;
-    padding: 11px 11px;
+    padding: 15px 11px;
     font-weight: 500;
     padding-left: 0;
     padding-right: 0;
@@ -10452,7 +10464,7 @@ select.default:focus, select.default:active {
     width: 100%;
     height: 2px;
     border-radius: 1px;
-    background: gray;
+    background: #013346;
     -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
     transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
   }
@@ -10501,28 +10513,55 @@ body.show-menu .mob-btn span + span + span {
   background-color: #013346;
   position: relative;
   z-index: 2;
-  padding-top: 100px;
+  padding-top: 50px;
   overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    padding-top: 100px;
+  }
+}
+.footer-about {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 992px) {
+  .footer-about {
+    margin-bottom: 0;
+  }
 }
 .footer-about-title {
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
   font-size: 20px;
 }
-.footer-about-title::before {
-  position: absolute;
-  content: "";
-  left: -16px;
-  top: -10px;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  background-color: #ffffff;
-  opacity: 0.1;
+@media screen and (min-width: 992px) {
+  .footer-about-title {
+    margin-bottom: 30px;
+  }
+  .footer-about-title::before {
+    position: absolute;
+    content: "";
+    left: -16px;
+    top: -10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    opacity: 0.1;
+  }
 }
 .footer-about p {
   color: #fff;
+}
+.footer-about .smform {
+  display: block;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 992px) {
+  .footer-about .smform {
+    display: none;
+  }
 }
 .footer-menu {
   display: -webkit-box;
@@ -10532,32 +10571,99 @@ body.show-menu .mob-btn span + span + span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 70px;
-  -webkit-padding-end: 60px;
-          padding-inline-end: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 992px) {
+  .footer-menu {
+    padding-left: 70px;
+    padding-right: 60px;
+  }
+}
+.footer-menu .menu-items {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .footer-menu .menu-items {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
 }
 .footer-menu .menu-items .menu-title {
   color: #fff;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  padding: 20px 0;
   font-size: 20px;
+  position: relative;
 }
-.footer-menu .menu-items .menu-title::before {
-  position: absolute;
-  content: "";
-  left: -16px;
-  top: -10px;
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  background-color: #ffffff;
-  opacity: 0.1;
+@media screen and (min-width: 992px) {
+  .footer-menu .menu-items .menu-title {
+    padding: 0;
+  }
+  .footer-menu .menu-items .menu-title::before {
+    position: absolute;
+    content: "";
+    left: -16px;
+    top: -10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    opacity: 0.1;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer-menu .menu-items.opener .menu-title::before {
+    background-color: #fff;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 7px;
+    top: 15px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    width: 1.5px;
+  }
+  .footer-menu .menu-items.opener .menu-title::after {
+    background-color: #fff;
+    content: "";
+    height: 1.5px;
+    position: absolute;
+    right: 0px;
+    top: 22px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    width: 16px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer-menu .menu-items.open .menu-title::before {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    opacity: 0;
+  }
+  .footer-menu .menu-items.open .menu-title::after {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
 }
 .footer-menu .menu-items ul {
-  display: none;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+@media screen and (min-width: 992px) {
+  .footer-menu .menu-items ul {
+    padding-top: 30px;
+  }
 }
 .footer-menu .menu-items ul li a {
   color: #fff;
@@ -10566,6 +10672,9 @@ body.show-menu .mob-btn span + span + span {
   transition: all 0.3s ease-in-out;
 }
 .footer-menu .menu-items ul li a:hover {
+  color: #29B574;
+}
+.footer-menu .menu-items ul li a.active {
   color: #29B574;
 }
 .footer-menu .menu-items ul li + li {
@@ -10577,6 +10686,7 @@ body.show-menu .mob-btn span + span + span {
   margin-bottom: 10px;
   color: #fff;
   font-weight: 600;
+  opacity: 0.8;
 }
 .footer-menu .menu-items ul li span {
   font-size: 16px;
@@ -10587,11 +10697,27 @@ body.show-menu .mob-btn span + span + span {
     display: block;
   }
 }
+@media screen and (max-width: 991px) {
+  .footer-menu .menu-items .toggle {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer-menu .menu-items.open .toggle {
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    -webkit-transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease;
+    padding-bottom: 15px;
+  }
+}
 .footer-menu .menu-items.active ul {
   display: block;
 }
 .footer-bottom {
-  margin-top: 80px;
+  margin-top: 40px;
   padding: 20px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: -webkit-box;
@@ -10600,9 +10726,17 @@ body.show-menu .mob-btn span + span + span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  .footer-bottom {
+    margin-top: 80px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .footer-bottom p {
   margin-bottom: 0;
@@ -10613,6 +10747,12 @@ body.show-menu .mob-btn span + span + span {
   margin-bottom: 0;
   max-width: 80px;
   height: 50px;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .footer-bottom .footer-logo {
+    display: block;
+  }
 }
 .footer-bottom .footer-logo img {
   width: 100%;
@@ -10620,14 +10760,19 @@ body.show-menu .mob-btn span + span + span {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.footer-bottom .form {
+.footer .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 5px;
 }
-.footer-bottom .form .form-control {
+@media screen and (min-width: 576px) {
+  .footer .form {
+    max-width: 450px;
+  }
+}
+.footer .form .form-control {
   background-color: transparent;
   border: none;
   -webkit-box-shadow: none;
@@ -10635,8 +10780,47 @@ body.show-menu .mob-btn span + span + span {
   height: 45px;
   color: #fff;
 }
-.footer-bottom .form .submit {
+.footer .form .form-control::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+.footer .form .form-control::-moz-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+.footer .form .form-control:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+.footer .form .form-control::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+.footer .form .form-control::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+.footer .form .submit {
   width: 60px;
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+.footer .form .submit img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.footer .dk-form {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .footer .dk-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .footer::after {
   left: -30%;
@@ -10654,15 +10838,23 @@ body.show-menu .mob-btn span + span + span {
 }
 
 .btn {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
   font-weight: 500 !important;
-  font-size: 18px;
+  font-size: 16px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+@media screen and (min-width: 992px) {
+  .btn {
+    font-size: 18px;
+  }
 }
 
 .btn-circle {
@@ -10714,18 +10906,24 @@ body.show-menu .mob-btn span + span + span {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 12px 0;
+  padding: 14px 0;
   margin: 0 0 0 70px;
   line-height: 1.8;
   text-transform: uppercase;
   text-align: left;
   width: 100%;
 }
+@media screen and (min-width: 992px) {
+  .btn-text {
+    padding: 12px 0;
+  }
+}
 
 .cta-btn {
   max-width: 300px;
   height: auto;
   padding: 0 !important;
+  overflow: hidden;
 }
 .cta-btn:hover .btn-circle {
   width: 100%;
@@ -10759,7 +10957,7 @@ body.show-menu .mob-btn span + span + span {
 .btn-primary .arrow::before {
   position: absolute;
   content: "";
-  top: -0.4rem;
+  top: -0.3rem;
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;

@@ -1,9 +1,14 @@
 .btn {
-    display: flex !important;
+    display: flex ;
     align-items: center;
     position: relative;
     font-weight: 500!important;
-    font-size: 18px;
+    font-size: 16px;
+    box-shadow: none!important;
+    outline: none!important;
+    @include min(992){
+        font-size: 18px;
+    }
 }
 
 
@@ -57,18 +62,22 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 12px 0;
+    padding: 14px 0;
     margin: 0 0 0 70px;
     line-height: 1.8;
     text-transform: uppercase;
     text-align: left;
     width: 100%;
+    @include min(992){
+        padding: 12px 0;  
+    }
 }
 
 .cta-btn {
     max-width: 300px;
     height: auto;
     padding: 0!important;
+    overflow: hidden;
 
     &:hover {
         .btn-circle {
@@ -101,7 +110,7 @@
     &::before {
         position: absolute;
         content: "";
-        top: -0.4rem;
+        top: -0.3rem;
         right: 0.0625rem;
         width: 0.625rem;
         height: 0.625rem;

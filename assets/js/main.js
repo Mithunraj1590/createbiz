@@ -113,3 +113,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 10);
     });
 });
+
+
+// footer
+document.querySelectorAll('.menu-title').forEach((title) => {
+    title.addEventListener('click', () => {
+      const menuItem = title.parentElement; // Get the parent .menu-items div
+  
+      // If the clicked menu item is already open, close it
+      if (menuItem.classList.contains('open')) {
+        menuItem.classList.remove('open');
+      } else {
+        // Close all other open menu items
+        document.querySelectorAll('.footer-menu .menu-items').forEach((item) => {
+          item.classList.remove('open');
+        });
+  
+        // Open the clicked menu item
+        menuItem.classList.add('open');
+      }
+    });
+  });
+  
+  
