@@ -10169,6 +10169,24 @@ select.default:focus, select.default:active {
 .main-header .logo a {
   display: inline-block;
 }
+.main-header .header-container {
+  padding: 0 15px;
+}
+@media screen and (min-width: 1200px) {
+  .main-header .header-container {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .main-header .header-container {
+    padding: 0 50px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main-header .header-container {
+    max-width: 1400;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .desk-hide {
@@ -10304,6 +10322,9 @@ select.default:focus, select.default:active {
     pointer-events: none;
     color: #013346;
     font-size: 0.625rem;
+  }
+  .main-nav > ul > li:last-child {
+    padding-right: 0;
   }
   .mob-btn {
     display: none;

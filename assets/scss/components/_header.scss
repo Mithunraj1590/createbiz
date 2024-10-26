@@ -25,6 +25,19 @@
             display: inline-block;
         }
     }
+    .header-container{
+        padding: 0 15px;
+        @include min(1200){
+           padding: 0 30px;
+        }
+        @include min(1400){
+            padding: 0 50px;
+        }
+        
+        @include min(1600){
+            max-width: 1400;
+        }
+    }
 }
 
 
@@ -159,6 +172,9 @@
                             }
                         }
                     }
+                }
+                &:last-child{
+                    padding-right: 0;
                 }
             }
         }
