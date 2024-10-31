@@ -14,6 +14,7 @@
 
     &-about {
         margin-bottom: 30px;
+        padding-left: 30px;
 
         @include min(992) {
             margin-bottom: 0;
@@ -42,17 +43,17 @@
             }
         }
 
-        p {
-            color: #fff;
-        }
+      
         .smform{
             display: block;
             margin-bottom: 40px;
-            @include min(992){
-                display: none;
-            }
+            margin-left: auto;
+            // @include min(992){
+            //     display: none;
+            // }
             
         }
+        
     }
 
     &-menu {
@@ -62,7 +63,7 @@
         flex-wrap: wrap;
 
         @include min(992) {
-            padding-left: 70px;
+            // padding-left: 70px;
             padding-right: 60px;
         }
 
@@ -240,21 +241,7 @@
             font-size: 14px;
         }
 
-        .footer-logo {
-            margin-bottom: 0;
-            max-width: 80px;
-            height: 50px;
-            display: none;
-            @include min(992){
-                display: block;
-            }
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
+       
 
         
     }

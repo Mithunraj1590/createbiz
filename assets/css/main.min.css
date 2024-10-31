@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 .ttl {
   font-weight: 600;
   margin-bottom: 2rem;
@@ -9,7 +9,7 @@
   margin: inherit;
   color: inherit;
   padding: inherit;
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .ttl h1 span, .ttl .h1 span, .ttl h2 span, .ttl .h2 span, .ttl h3 span, .ttl .h3 span, .ttl h4 span, .ttl .h4 span, .ttl h5 span, .ttl .h5 span, .ttl h6 span, .ttl .h6 span, .ttl p span {
   display: block;
@@ -88,7 +88,7 @@
 
 h1,
 .h1 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 3.75rem;
 }
@@ -113,7 +113,7 @@ h1,
 
 h2,
 .h2 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 1.875rem;
 }
@@ -138,7 +138,7 @@ h2,
 
 h3,
 .h3 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 1.75rem;
 }
@@ -157,7 +157,7 @@ h3,
 
 h4,
 .h4 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 1.5rem;
 }
@@ -176,7 +176,7 @@ h4,
 
 h5,
 .h5 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 1.125rem;
 }
@@ -195,7 +195,7 @@ h5,
 
 h6,
 .h6 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 1rem;
 }
@@ -207,7 +207,7 @@ h6,
 }
 
 .ttl-75 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 2.5rem;
 }
@@ -228,7 +228,7 @@ h6,
 }
 
 .ttl-60 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 1.875rem;
 }
@@ -249,7 +249,7 @@ h6,
 }
 
 .ttl-55 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 1.875rem;
 }
@@ -270,7 +270,7 @@ h6,
 }
 
 .ttl-40 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 2rem;
 }
@@ -286,7 +286,7 @@ h6,
 }
 
 .ttl-50 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 2.1875rem;
 }
@@ -302,7 +302,7 @@ h6,
 }
 
 .ttl-30 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 1.125rem;
 }
@@ -318,7 +318,7 @@ h6,
 }
 
 .ttl-20 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 1rem;
 }
@@ -334,7 +334,7 @@ h6,
 }
 
 .ttl-18 {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 1rem;
 }
@@ -10253,7 +10253,7 @@ select.default:focus, select.default:active {
     padding-right: 0;
     text-decoration: none;
     position: relative;
-    color: #000;
+    color: #013346;
     font-weight: 400;
   }
   .main-nav > ul > li > a.active {
@@ -10313,7 +10313,6 @@ select.default:focus, select.default:active {
   }
   .main-nav > ul > li ul li.submenu::after {
     content: "\e807";
-    font-family: "deafult-icons";
     position: absolute;
     right: 0.75rem;
     top: 50%;
@@ -10544,6 +10543,7 @@ body.show-menu .mob-btn span + span + span {
 }
 .footer-about {
   margin-bottom: 30px;
+  padding-left: 30px;
 }
 @media screen and (min-width: 992px) {
   .footer-about {
@@ -10572,17 +10572,10 @@ body.show-menu .mob-btn span + span + span {
     opacity: 0.1;
   }
 }
-.footer-about p {
-  color: #fff;
-}
 .footer-about .smform {
   display: block;
   margin-bottom: 40px;
-}
-@media screen and (min-width: 992px) {
-  .footer-about .smform {
-    display: none;
-  }
+  margin-left: auto;
 }
 .footer-menu {
   display: -webkit-box;
@@ -10597,7 +10590,6 @@ body.show-menu .mob-btn span + span + span {
 }
 @media screen and (min-width: 992px) {
   .footer-menu {
-    padding-left: 70px;
     padding-right: 60px;
   }
 }
@@ -10763,23 +10755,6 @@ body.show-menu .mob-btn span + span + span {
   margin-bottom: 0;
   color: #fff;
   font-size: 14px;
-}
-.footer-bottom .footer-logo {
-  margin-bottom: 0;
-  max-width: 80px;
-  height: 50px;
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  .footer-bottom .footer-logo {
-    display: block;
-  }
-}
-.footer-bottom .footer-logo img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .footer .form {
   display: -webkit-box;
@@ -10959,7 +10934,7 @@ body.show-menu .mob-btn span + span + span {
 }
 
 .btn-primary {
-  background-color: #29B574 !important;
+  background-color: #EB2227 !important;
   border: none;
   height: 55px;
   border-radius: 2rem;

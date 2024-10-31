@@ -100,7 +100,7 @@
                     padding-right: 0;
                     text-decoration: none;
                     position: relative;
-                    color: $text-color;
+                    color: $primary-color;
                     font-weight: 400;
                    
                     &.active {
@@ -161,7 +161,7 @@
                         &.submenu {
                             &::after {
                                 content: "\e807";
-                                font-family: $d-ico;
+                            
                                 position: absolute;
                                 right: size(12);
                                 top: 50%;
