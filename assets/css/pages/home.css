@@ -324,8 +324,8 @@
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  color: #F39321;
-  font-family: "Saira", sans-serif;
+  color: #EB2227;
+  text-transform: uppercase;
 }
 .home-services .service-top .title {
   color: #013346;
@@ -658,8 +658,8 @@
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  color: #F39321;
-  font-family: "Saira", sans-serif;
+  color: #EB2227;
+  text-transform: uppercase;
 }
 .home-about .content .title {
   color: #013346;
@@ -774,14 +774,27 @@
     padding-bottom: 100px;
   }
 }
+.home-faq .title {
+  color: #013346;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: auto;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 992px) {
+  .home-faq .title {
+    margin-bottom: 30px;
+  }
+}
 .home-faq .faq {
   margin-top: 50px;
-  max-width: 80%;
-  margin: auto;
 }
 @media screen and (min-width: 992px) {
   .home-faq .faq {
     margin-top: 0;
+    max-width: 80%;
+    margin: auto;
   }
 }
 .home-faq .faq .accordion-item {
@@ -825,6 +838,10 @@
 }
 .home-faq .faq .accordion-body {
   padding: 15px 5px 25px 5px;
+}
+.home-faq a {
+  margin: auto;
+  margin-top: 30px;
 }
 
 .home-contact {

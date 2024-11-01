@@ -44,16 +44,25 @@
         }
 
       
-        .smform{
-            display: block;
-            margin-bottom: 40px;
-            margin-left: auto;
-            // @include min(992){
-            //     display: none;
-            // }
-            
+     
+        
+    }
+    .smform{
+        display: block;
+        margin-bottom: 40px;
+        margin-left: auto;
+        @include min(992){
+            display: none;
         }
         
+    }
+    .dkform{
+        display: none;
+        margin-bottom: 40px;
+        margin-left: auto;
+        @include min(992){
+            display: block;
+        }
     }
 
     &-menu {

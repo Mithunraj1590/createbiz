@@ -104,14 +104,14 @@
                     font-weight: 400;
                    
                     &.active {
-                        color: $secondary;
+                        color: $fourth-color;
                         font-weight: 500;
                     }
                 }
                 &:hover {
                     >a {
                         @include transition(all, ease, 0.5s);
-                       color: $secondary;
+                       color: $fourth-color;
                        font-weight: 500;
                     }
                     >ul {
@@ -154,8 +154,8 @@
                                 top: 0;
                             }
                             >a {                          
-                                color: $secondary;
-                       font-weight: 500;
+                                color: $fourth-color;
+                                  font-weight: 500;
                             }
                         }
                         &.submenu {

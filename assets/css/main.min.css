@@ -10257,14 +10257,14 @@ select.default:focus, select.default:active {
     font-weight: 400;
   }
   .main-nav > ul > li > a.active {
-    color: #29B574;
+    color: #EB2227;
     font-weight: 500;
   }
   .main-nav > ul > li:hover > a {
     transition: all ease 0.5s;
     -o-transition: all ease 0.5s;
     -webkit-transition: all ease 0.5s;
-    color: #29B574;
+    color: #EB2227;
     font-weight: 500;
   }
   .main-nav > ul > li:hover > ul {
@@ -10308,7 +10308,7 @@ select.default:focus, select.default:active {
     top: 0;
   }
   .main-nav > ul > li ul li:hover > a {
-    color: #29B574;
+    color: #EB2227;
     font-weight: 500;
   }
   .main-nav > ul > li ul li.submenu::after {
@@ -10572,10 +10572,25 @@ body.show-menu .mob-btn span + span + span {
     opacity: 0.1;
   }
 }
-.footer-about .smform {
+.footer .smform {
   display: block;
   margin-bottom: 40px;
   margin-left: auto;
+}
+@media screen and (min-width: 992px) {
+  .footer .smform {
+    display: none;
+  }
+}
+.footer .dkform {
+  display: none;
+  margin-bottom: 40px;
+  margin-left: auto;
+}
+@media screen and (min-width: 992px) {
+  .footer .dkform {
+    display: block;
+  }
 }
 .footer-menu {
   display: -webkit-box;

@@ -1,0 +1,9 @@
+.business-banner {
+  padding: 150px 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-image: url(/assets/images/business/banner.jpg);
+  background-position: center center;
+  background-size: cover;
+}

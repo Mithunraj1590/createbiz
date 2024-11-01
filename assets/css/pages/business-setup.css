@@ -1,0 +1,46 @@
+.business-setup {
+  margin-top: 90px;
+}
+
+.business-banner {
+  padding: 100px 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-image: url(/assets/images/business/banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+}
+.business-banner::after {
+  background: #000000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.business-banner .title {
+  margin-bottom: 15px;
+  max-width: 600px;
+  margin: auto;
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .business-banner .title {
+    margin-bottom: 25px;
+  }
+}
+.business-banner p {
+  color: #fff;
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.business-banner button {
+  margin: auto;
+}
