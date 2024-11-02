@@ -1,0 +1,84 @@
+@import '../utilities/variable';
+@import '../mixins/mixins';
+
+.inner-page{
+    margin-top: 90px;
+}
+
+.inner-banner{
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-image: url(./../images/business/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    &::after{
+        background: #000000 none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .title {
+        margin-bottom: 15px;
+        max-width: 650px;
+        margin: auto;
+        color: #fff;
+        @include min(992) {
+            margin-bottom: 25px;
+        }
+    }
+    p{
+        color: #fff;
+        max-width: 800px;
+        margin: auto;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    button{
+        margin: auto;
+    }
+    .breadcrumb-nav{
+        padding: 15px 0;
+   
+      .breadcrumb{
+        justify-content: center;
+        max-width: max-content;
+        margin: auto;
+        gap: 30px;
+        .breadcrumb-item{
+            color: #fff;
+            position: relative;
+            text-transform: uppercase;
+           a{
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+            i{
+                margin-right: 7px;
+            }
+           }
+           &:last-child{
+
+               &::before{
+                content: "";
+                height: 2px;
+                left: -18px;
+                margin-top: -1px;
+                position: absolute;
+                top: 55%;
+                background: #ffffff;
+                width: 15px;
+               }
+           }
+        }
+      }
+    }
+}

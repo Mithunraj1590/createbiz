@@ -1,0 +1,43 @@
+.home-contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-image: url(/assets/images/cta-banner.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    &::after{
+        background: #000000 none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    @include min(992) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .title{
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    p{
+        font-size: 18px;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+
+    a{
+        margin: auto;
+    }
+
+  
+}

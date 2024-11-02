@@ -44,3 +44,208 @@
 .business-banner button {
   margin: auto;
 }
+
+.service-list {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.service-list-head {
+  margin-bottom: 30px;
+}
+.service-list-head .title {
+  color: #013346;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .service-list-head .title {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
+.service-list-head p {
+  margin: auto;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  font-size: 18px;
+}
+.service-list .card {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+.service-list .card .title {
+  margin-bottom: 20px;
+}
+.service-list .card i {
+  font-size: 40px;
+}
+.service-list .card p {
+  margin-top: 30px;
+}
+.service-list .card-footer {
+  margin-top: auto;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.service-list .card .btn {
+  max-width: 180px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+.service-list .card .btn .btn-circle {
+  width: 40px;
+  height: 40px;
+}
+.service-list .card .btn .btn-circle .arrow {
+  left: 7px;
+}
+.service-list .card .btn .btn-text {
+  font-size: 16px;
+  margin: 0 0 0 55px;
+  padding: 5px 0;
+}
+@media screen and (min-width: 992px) {
+  .service-list .card:hover .btn .btn-circle {
+    width: 100%;
+  }
+  .service-list .card:hover .btn .btn-circle .arrow {
+    -webkit-transform: translate(1rem, 0);
+            transform: translate(1rem, 0);
+    background-color: #fff;
+  }
+  .service-list .card:hover .btn .btn-text {
+    color: #fff;
+  }
+}
+
+.why-dubai {
+  padding-top: 80px;
+  position: relative;
+}
+.why-dubai .inner {
+  background-position: top;
+  background-size: cover;
+  background-image: url(/assets/images/business/why-dubai.jpg);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.why-dubai .inner .info {
+  position: relative;
+  top: -80px;
+  background-color: #013346;
+  padding: 50px 40px;
+}
+.why-dubai .inner .info .title {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.why-dubai .inner .info p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.why-dubai .inner .info strong {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 30px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.business-document {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.business-document .title {
+  color: #013346;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .business-document .title {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
+.business-document-items {
+  margin-top: -30px;
+}
+.business-document-items .item-grid .single-item {
+  margin-top: 30px;
+}
+.business-document-items .item-grid:first-child {
+  margin-top: 80px;
+}
+.business-document-items .item-grid .item {
+  padding: 50px 30px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+}
+.business-document-items .item-grid .item .title {
+  color: #000;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+.business-process {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.business-process .title {
+  color: #013346;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .business-process .title {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+.business-process-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  row-gap: 30px;
+}
+.business-process-steps .arrow {
+  display: inline-block;
+}
+.business-process-steps .card {
+  max-width: 30%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  padding: 35px 30px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+}

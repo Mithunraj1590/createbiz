@@ -1,0 +1,40 @@
+.minland-details {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.minland-details .nav-pills {
+  width: 400px;
+  position: sticky;
+  top: 110px;
+}
+.minland-details .nav-pills .nav-link {
+  height: 70px;
+  padding: 0 20px;
+  text-align: left;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  color: #000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.minland-details .nav-pills .nav-link + .nav-link {
+  margin-top: 20px;
+}
+.minland-details .nav-pills .nav-link.active {
+  background-color: #013346;
+  color: #fff;
+}
+.minland-details .tab-content {
+  width: 100%;
+  padding-left: 100px;
+}
