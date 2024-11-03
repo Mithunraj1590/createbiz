@@ -10971,6 +10971,86 @@ body.show-menu .mob-btn span + span + span {
   width: 15px;
 }
 
+.mainfaq {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 992px) {
+  .mainfaq {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.mainfaq .title {
+  color: #013346;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: auto;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 992px) {
+  .mainfaq .title {
+    margin-bottom: 30px;
+  }
+}
+.mainfaq .faq {
+  margin-top: 50px;
+}
+@media screen and (min-width: 992px) {
+  .mainfaq .faq {
+    margin-top: 0;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+.mainfaq .faq .accordion-item {
+  border: none !important;
+  margin-bottom: 15px;
+}
+.mainfaq .faq .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.mainfaq .faq .accordion-header {
+  border: none !important;
+}
+.mainfaq .faq .accordion-button {
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  margin-bottom: 0;
+  background-color: #013346;
+  color: #fff;
+}
+.mainfaq .faq .accordion-button.collapsed {
+  background-color: #fff;
+  color: #013346;
+}
+.mainfaq .faq .accordion-button.collapsed:after {
+  background-image: url(/assets/images/arrow.svg);
+  width: 15px;
+  height: 9px;
+  background-size: contain;
+}
+.mainfaq .faq .accordion-button:not(.collapsed)::after {
+  fill: #fff;
+  background-image: url(/assets/images/w-arrow.svg);
+  width: 15px;
+  height: 9px;
+  background-size: contain;
+}
+.mainfaq .faq .accordion-body {
+  padding: 15px 5px 25px 5px;
+}
+.mainfaq a {
+  margin: auto;
+  margin-top: 30px;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
