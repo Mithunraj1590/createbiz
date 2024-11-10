@@ -1,0 +1,139 @@
+:root {
+  --background-dark: #2d3548;
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --accent-color: #F67B50;
+  --spacing-s: 16px;
+  --spacing-m: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 48px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+.aff-services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.aff-services .title {
+  color: #013346;
+  max-width: 600px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .aff-services .title {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
+.aff-services p {
+  margin: auto;
+  max-width: 850px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.aff-services .service-list {
+  margin-top: 20px;
+}
+@media screen and (min-width: 992px) {
+  .aff-services .service-list {
+    margin-top: 80px;
+  }
+}
+.aff-services .service-list .row {
+  row-gap: 30px;
+}
+.aff-services .service-list .card {
+  padding: 0;
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  background-color: transparent;
+}
+@media screen and (min-width: 992px) {
+  .aff-services .service-list .card {
+    padding: 0 50px 30px 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.aff-services .service-list .card .icon {
+  width: 70px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70px;
+          flex: 0 0 70px;
+  height: 70px;
+  background-color: rgba(8, 106, 216, 0.07);
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 992px) {
+  .aff-services .service-list .card .icon {
+    width: 90px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90px;
+            flex: 0 0 90px;
+    height: 90px;
+  }
+}
+.aff-services .service-list .card .info {
+  padding-left: 0;
+}
+@media screen and (min-width: 992px) {
+  .aff-services .service-list .card .info {
+    padding-left: 30px;
+  }
+}
+.aff-services .service-list .card .info .title {
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.aff-services .service-list .card .info p {
+  font-size: 16px;
+  text-align: left;
+}
+.aff-services .service-list .row {
+  row-gap: 30px;
+}
+@media screen and (max-width: 992px) {
+  .aff-services .service-list .row .col-lg-6:last-child .card {
+    border: none;
+  }
+}
+.aff-services .service-list .btn-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 575px) {
+  .aff-services .service-list .btn-primary {
+    max-width: 100%;
+  }
+  .aff-services .service-list .btn-primary .arrow {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .aff-services .service-list .btn-primary {
+    display: none;
+  }
+}

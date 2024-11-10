@@ -1,9 +1,71 @@
+:root {
+  --background-dark: #2d3548;
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --accent-color: #F67B50;
+  --spacing-s: 16px;
+  --spacing-m: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 48px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
 .minland-details {
   padding-top: 80px;
   padding-bottom: 100px;
 }
+.minland-details .inner-form {
+  margin-top: 50px;
+  background-color: #013346;
+  padding: 30px 20px;
+  border-radius: 8px;
+}
+.minland-details .inner-form .title {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+.minland-details .inner-form .form-control,
+.minland-details .inner-form .form-select {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  padding-left: 0;
+  font-size: 16px;
+  color: #fff;
+}
+.minland-details .inner-form .form-control::-webkit-input-placeholder, .minland-details .inner-form .form-select::-webkit-input-placeholder {
+  color: #fff;
+}
+.minland-details .inner-form .form-control::-moz-placeholder, .minland-details .inner-form .form-select::-moz-placeholder {
+  color: #fff;
+}
+.minland-details .inner-form .form-control:-ms-input-placeholder, .minland-details .inner-form .form-select:-ms-input-placeholder {
+  color: #fff;
+}
+.minland-details .inner-form .form-control::-ms-input-placeholder, .minland-details .inner-form .form-select::-ms-input-placeholder {
+  color: #fff;
+}
+.minland-details .inner-form .form-control::placeholder,
+.minland-details .inner-form .form-select::placeholder {
+  color: #fff;
+}
+.minland-details .inner-form .form-select {
+  padding-left: 5px;
+}
+.minland-details .inner-form .form-select option {
+  color: #000;
+}
+.minland-details .inner-form button:hover {
+  background-color: rgba(235, 34, 39, 0.7);
+}
 .minland-details .nav-pills {
-  width: 400px;
+  width: 500px;
   position: sticky;
   top: 110px;
 }

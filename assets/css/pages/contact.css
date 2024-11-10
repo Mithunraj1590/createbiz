@@ -1,0 +1,116 @@
+:root {
+  --background-dark: #2d3548;
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --accent-color: #F67B50;
+  --spacing-s: 16px;
+  --spacing-m: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 48px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+.contact-page {
+  margin-top: 90px;
+}
+
+.contact-form {
+  padding: 100px 0;
+}
+.contact-form .contact-item {
+  position: relative;
+  z-index: 1;
+}
+.contact-form .contact-item::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 75%;
+  background: #ffffff;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  border-radius: 8px;
+}
+.contact-form .title {
+  max-width: 80%;
+  color: #013346;
+}
+.contact-form .form-item {
+  padding: 50px 40px;
+}
+.contact-form .form .form-control {
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  padding: 15px 0;
+  font-size: 16px;
+}
+.contact-form .form textarea {
+  resize: none;
+}
+.contact-form .contact-info {
+  background-color: #EB2227;
+  width: 80%;
+  padding: 50px;
+  border-radius: 8px;
+  margin-left: 60px;
+}
+.contact-form .contact-info .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+}
+.contact-form .contact-info .item .icon {
+  padding-top: 5px;
+  margin-right: 25px;
+}
+.contact-form .contact-info .item .icon i {
+  font-size: 22px;
+  color: #fff;
+}
+.contact-form .contact-info .item .info strong {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.contact-form .contact-info .item .info p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.contact-form .contact-info .item .info a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+.contact-form .contact-info .item .info a:hover {
+  text-decoration: underline;
+}
+.contact-form .contact-info .icons {
+  width: 100%;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.contact-form .contact-info .icons i {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.contact-form .contact-info .icons a {
+  padding: 2px;
+}
+.contact-form .contact-info .icons a:hover i {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
