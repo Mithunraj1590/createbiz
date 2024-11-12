@@ -139,7 +139,6 @@
   row-gap: 20px;
 }
 .home-business-setup .flip-card {
-  background-color: transparent;
   width: 100%;
   height: 350px;
   -webkit-perspective: 1000px;
@@ -179,14 +178,17 @@
 }
 .home-business-setup .flip-card-front {
   color: #000;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  padding: 0;
 }
-@media screen and (min-width: 992px) {
-  .home-business-setup .flip-card-front {
-    -webkit-transform: 0;
-            transform: 0;
-  }
+.home-business-setup .flip-card-front figure {
+  width: 100%;
+  height: 100%;
+}
+.home-business-setup .flip-card-front figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home-business-setup .flip-card-back {
   background-color: #fff;
@@ -247,6 +249,7 @@
   height: 60px;
   position: relative;
   width: 100%;
+  margin-top: 50px;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -285,7 +288,10 @@
           justify-content: space-between;
 }
 .home-business-setup .slide {
-  width: 150px;
+  width: 100%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   height: 60px;
   display: -ms-grid;
   display: grid;
@@ -293,6 +299,9 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  font-size: 25px;
+  font-weight: 600;
+  color: #013346;
 }
 .home-business-setup .slide:hover {
   -webkit-transform: scale(0.8);
@@ -327,6 +336,12 @@
   z-index: 2;
 }
 @media screen and (min-width: 992px) {
+  .home-services {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1600px) {
   .home-services {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -416,6 +431,15 @@
   background-color: rgba(8, 106, 216, 0.07);
   border-radius: 100%;
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 992px) {
   .home-services .service-list .card .icon {
@@ -425,6 +449,9 @@
             flex: 0 0 90px;
     height: 90px;
   }
+}
+.home-services .service-list .card .icon i {
+  font-size: 30px;
 }
 .home-services .service-list .card .info {
   padding-left: 0;
@@ -706,14 +733,16 @@
 }
 .home-about .content ul li::before {
   position: absolute;
+  content: "";
   left: 0;
-  top: 0;
-  content: "N";
-  font-family: "ElegantIcons";
-  text-align: center;
-  border-radius: 50%;
-  font-weight: 700;
-  color: #EB2227;
+  top: 3px;
+  width: 7px;
+  height: 14px;
+  border: 2px solid #000;
+  border-top: 0;
+  border-left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .home-about .content ul li + li {
   margin-top: 15px;
