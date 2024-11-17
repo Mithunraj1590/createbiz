@@ -2,23 +2,21 @@
 @import '../mixins/mixins';
 
 
-
-
-.minland-details{
-    padding-top: 80px;
-    padding-bottom: 100px;
-     .inner-form{
+.form-section {
+    .inner-form {
         margin-top: 50px;
         background-color: $primary;
         padding: 30px 20px;
         border-radius: 8px;
-         .title{
+
+        .title {
             color: #fff;
             margin-bottom: 40px;
             font-size: 25px;
-         }
+        }
+
         .form-control,
-        .form-select{
+        .form-select {
             background-color: transparent;
             border: none;
             border-radius: 0;
@@ -28,28 +26,65 @@
             padding-left: 0;
             font-size: 16px;
             color: #fff;
-            &::placeholder{
+
+            &::placeholder {
                 color: #fff;
             }
-           
+
         }
-        .form-select{
+
+        .form-select {
             padding-left: 5px;
-            option{
+
+            option {
                 color: #000;
             }
         }
-        button{
-          &:hover{
-            background-color: rgba($color: $fourth-color, $alpha: .7);
-          }
+
+        button {
+            &:hover {
+                background-color: rgba($color: $fourth-color, $alpha: .7);
+            }
         }
-        
-     }
-    .nav-pills{
+
+    }
+}
+
+.minland-details {
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    .head {
+        .title {
+            color: $primary;
+            max-width: max-content;
+            margin: auto;
+            margin-bottom: 20px;
+
+            @include min(992) {
+                margin-bottom: 25px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin: auto;
+            max-width: max-content;
+
+            @include min(992) {
+                margin: auto;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+
+
+    .nav-pills {
         width: 500px;
         position: sticky;
         top: 110px;
+
         .nav-link {
             height: 70px;
             padding: 0 20px;
@@ -61,19 +96,140 @@
             justify-content: space-between;
             display: flex;
             align-items: center;
-       
-            &+.nav-link{
+
+            &+.nav-link {
                 margin-top: 20px;
             }
 
-            &.active{
+            &.active {
                 background-color: $primary;
                 color: #fff;
             }
         }
     }
-    .tab-content{
+
+    .tab-content {
         width: 100%;
         padding-left: 100px;
+
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
     }
 }
+
+.minland-lisence {
+    padding: 100px 0;
+
+    .title {
+        color: $primary;
+        max-width: max-content;
+        margin: auto;
+        margin-bottom: 20px;
+
+        @include min(992) {
+            margin-bottom: 25px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 740px;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    ul {
+        margin: 70px 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+
+        li {
+            font-size: 18px;
+            text-align: center;
+
+            strong {
+                display: block;
+                font-size: 20px;
+                margin-bottom: 15px;
+                color: $primary;
+            }
+        }
+
+        &+p {
+            max-width: max-content;
+            color: $fourth-color;
+        }
+    }
+}
+
+.minland-documents {
+    padding: 100px 0;
+
+    .title {
+        color: $primary;
+        max-width: 90%;
+      
+        margin-bottom: 20px;
+
+        @include min(992) {
+            margin-bottom: 25px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 740px;
+        margin: auto;
+        margin-bottom: 20px;
+
+    }
+    a{
+        padding-left: 0;
+    }
+
+    .row {
+       align-items: center;
+    }
+
+    .services-items {
+        margin-top: -30px;
+
+        .item-grid {
+            &:first-child{
+                margin-top: 80px;
+            }
+        }
+
+        .single-item {
+            margin-top: 30px;
+
+            .item {
+                padding: 40px 30px;
+                background: #ffffff;
+                box-shadow: 0 0 10px #cccccc;
+                ul{
+                    margin-top: 20px;
+                    padding-left: 20px;
+                    li{
+                        &+li{
+                            margin-top: 10px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
