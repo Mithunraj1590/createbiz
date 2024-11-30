@@ -168,3 +168,17 @@ document.querySelectorAll('.menu-title').forEach((title) => {
       timeline.classList.remove('hide-line');
     }
   });
+
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    direction: 'horizontal', 
+    loop: true, 
+    autoplay: {
+      delay: 0, 
+      disableOnInteraction: false,
+    },
+    speed: 5000,
+  
+  });

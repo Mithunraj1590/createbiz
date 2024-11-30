@@ -11,11 +11,23 @@
   --width-container: 1200px;
 }
 
+.form-section {
+  padding: 100px 0;
+}
+.form-section .title {
+  color: #013346;
+}
+.form-section p {
+  font-size: 18px;
+}
+.form-section .info {
+  margin-bottom: 100px;
+  max-width: 90%;
+}
 .form-section .inner-form {
-  margin-top: 50px;
   background-color: #013346;
   padding: 30px 20px;
-  border-radius: 8px;
+  border-radius: 0;
 }
 .form-section .inner-form .title {
   color: #fff;
@@ -51,6 +63,10 @@
 .form-section .inner-form .form-select::placeholder {
   color: #fff;
 }
+.form-section .inner-form textarea {
+  height: 100px;
+  resize: none;
+}
 .form-section .inner-form .form-select {
   padding-left: 5px;
 }
@@ -59,6 +75,24 @@
 }
 .form-section .inner-form button:hover {
   background-color: rgba(235, 34, 39, 0.7);
+}
+
+.minland-list {
+  padding-bottom: 100px;
+}
+.minland-list .row {
+  row-gap: 30px;
+}
+.minland-list .card {
+  border: none;
+  text-align: center;
+}
+.minland-list .card strong {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.minland-list .card p {
+  text-align: center;
 }
 
 .minland-details {
@@ -70,7 +104,6 @@
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  margin: auto;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 992px) {
@@ -80,14 +113,12 @@
 }
 .minland-details .head p {
   font-size: 18px;
-  margin: auto;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
 }
 @media screen and (min-width: 992px) {
   .minland-details .head p {
-    margin: auto;
     margin-bottom: 50px;
   }
 }
@@ -133,7 +164,7 @@
   margin-bottom: 20px;
 }
 .minland-details .tab-content p {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 40px;
 }
 
@@ -155,9 +186,11 @@
 }
 .minland-lisence p {
   font-size: 18px;
-  max-width: 740px;
   margin: auto;
   text-align: center;
+}
+.minland-lisence p + p {
+  margin-top: 20px;
 }
 .minland-lisence ul {
   margin: 70px 0;
@@ -206,6 +239,7 @@
 }
 .minland-documents a {
   padding-left: 0;
+  font-size: 16px;
 }
 .minland-documents .row {
   -webkit-box-align: center;
@@ -234,4 +268,81 @@
 .minland-documents .services-items .single-item .item ul li + li {
   margin-top: 10px;
   font-size: 14px;
+}
+
+.minland-process .title {
+  color: #013346;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .minland-process .title {
+    margin-bottom: 25px;
+  }
+}
+.minland-process p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.offshore-lisence .title {
+  color: #013346;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .offshore-lisence .title {
+    margin-bottom: 40px;
+  }
+}
+
+.freezone-tab .title {
+  color: #013346;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .freezone-tab .title {
+    margin-bottom: 25px;
+  }
+}
+.freezone-tab p {
+  font-size: 18px;
+  margin: auto;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+@media screen and (min-width: 992px) {
+  .freezone-tab p {
+    margin-bottom: 50px;
+  }
+}
+.freezone-tab .lists .nav-tabs {
+  background-color: #A66E38;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.freezone-tab .lists .nav-tabs .nav-item .nav-link {
+  padding: 30px;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.freezone-tab .lists .nav-tabs .nav-item .nav-link.active {
+  background-color: #F39321;
+}
+.freezone-tab .lists .tab-content {
+  background-color: #E9EFEC;
+  margin-top: 15px;
 }

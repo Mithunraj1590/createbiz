@@ -4,7 +4,7 @@
 
 // about us page styles
 
-.about-page {
+.about-page{
     margin-top: 90px;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .about-details {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
 
     .content {
@@ -64,7 +64,7 @@
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .content-inner {
@@ -169,6 +169,75 @@
         }
 
        
+    }
+}
+
+.team{
+    padding: 100px 0;
+    .title {
+        color: $primary;
+        max-width: max-content;
+        margin: auto;
+        margin-bottom: 0;
+        margin-bottom: 50px;
+    }
+    .card{
+        text-align: center;
+        border: none;
+        .pill{
+            position: absolute;
+            top: 20px;
+            right: 30%;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #000;
+        }
+        figure{
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            border: 10px solid $secondary-color;
+            border-radius: 100%;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        span{
+            font-size: 16px;
+            display: inline-block;
+        }
+    }
+}
+
+.about-choose{
+    padding: 100px 0;
+    padding-top: 50px;
+    .title {
+        color: $primary;
+        max-width: max-content;
+        margin: auto;
+        margin-bottom: 0;
+        margin-bottom: 25px;
+    }
+    p{
+        max-width: 800px;
+        margin: auto;
+        font-size: 18px;
+        text-align: center;
+    }
+    .choose-list{
+           margin-top: 50px;
+           .card{
+            border: none;
+            p{
+                font-size: 18px;
+                font-weight: 500;
+            }
+           }
     }
 }
 

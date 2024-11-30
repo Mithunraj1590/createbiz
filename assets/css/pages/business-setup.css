@@ -95,15 +95,36 @@
           flex-direction: column;
   height: 100%;
   text-align: center;
+  border: none;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.service-list .card::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(243, 147, 33);
+  background: linear-gradient(130deg, rgba(243, 147, 33, 0.8) 0%, rgb(255, 255, 255) 50%);
+  z-index: -1;
 }
 .service-list .card .title {
   margin-bottom: 20px;
+  color: #000;
 }
 .service-list .card i {
   font-size: 40px;
+  color: #000;
 }
 .service-list .card p {
   margin-top: 30px;
+  color: #000;
 }
 .service-list .card-footer {
   margin-top: auto;
@@ -177,7 +198,7 @@
   position: relative;
 }
 .why-dubai .inner .info .title {
-  color: #000;
+  color: #013346;
   margin-bottom: 15px;
 }
 .why-dubai .inner .info p {
@@ -185,26 +206,16 @@
   font-size: 18px;
   margin-bottom: 0;
 }
-.why-dubai .inner .info strong {
-  font-size: 20px;
-  color: #000;
-  margin-top: 30px;
-  display: inline-block;
-  margin-bottom: 5px;
-  margin-right: 5px;
-}
 .why-dubai .inner .info ul {
   padding-left: 20px;
-  margin-top: 15px;
+  margin-top: 35px;
+  list-style-type: none;
 }
 .why-dubai .inner .info ul li {
   color: #000;
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-.why-dubai .inner .info ul li strong {
   font-size: 18px;
-  margin-top: 0;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .business-document {
@@ -244,14 +255,20 @@
   -webkit-box-shadow: 0 0 10px #cccccc;
           box-shadow: 0 0 10px #cccccc;
   height: 100%;
+  text-align: center;
+}
+.business-document .item-grid .item .info {
+  text-align: center;
 }
 .business-document .item-grid .item .title {
   color: #000;
   margin-left: 0;
+  margin: auto;
   margin-bottom: 15px;
 }
 .business-document .item-grid .item p {
-  text-align: left;
+  text-align: center;
+  font-size: 16px;
 }
 .business-document .not-sure {
   margin-top: 50px;
@@ -316,7 +333,7 @@
 .business-process .timeline-container {
   position: relative;
   width: 50%;
-  padding: var(--spacing-l) var(--spacing-xl);
+  padding: 10px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   opacity: 0;
@@ -326,9 +343,10 @@
   transition: opacity 0.6s ease-out, -webkit-transform 0.6s ease-out;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
+  width: 450px;
 }
 .business-process .timeline-container.left {
-  left: 0;
+  left: 12.5%;
 }
 .business-process .timeline-container.right {
   left: 50%;
@@ -348,7 +366,7 @@
   z-index: 99999;
 }
 .business-process .content {
-  padding: var(--spacing-xl);
+  padding: 30px 20px;
   background-color: var(--text-lighter);
   position: relative;
   border-radius: var(--spacing-l);
@@ -360,8 +378,16 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease, -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
   text-align: center;
   color: var(--background-dark);
-  font-weight: bold;
-  font-size: 1.25rem;
+}
+.business-process .content strong {
+  margin-bottom: 15px;
+  font-size: 18px;
+  display: block;
+}
+.business-process .content p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 0;
 }
 .business-process .content:hover {
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);

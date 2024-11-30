@@ -41,7 +41,7 @@
 }
 
 .about-details {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 .about-details .content {
@@ -73,7 +73,7 @@
   }
 }
 .about-details .content p {
-  font-size: 20px;
+  font-size: 18px;
 }
 .about-details .content .content-inner {
   position: relative;
@@ -164,6 +164,79 @@
 }
 .about-details .content ul li i {
   margin-right: 10px;
+}
+
+.team {
+  padding: 100px 0;
+}
+.team .title {
+  color: #013346;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: auto;
+  margin-bottom: 0;
+  margin-bottom: 50px;
+}
+.team .card {
+  text-align: center;
+  border: none;
+}
+.team .card .pill {
+  position: absolute;
+  top: 20px;
+  right: 30%;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #000;
+}
+.team .card figure {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border: 10px solid #29B574;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.team .card p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.team .card span {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.about-choose {
+  padding: 100px 0;
+  padding-top: 50px;
+}
+.about-choose .title {
+  color: #013346;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: auto;
+  margin-bottom: 0;
+  margin-bottom: 25px;
+}
+.about-choose p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+}
+.about-choose .choose-list {
+  margin-top: 50px;
+}
+.about-choose .choose-list .card {
+  border: none;
+}
+.about-choose .choose-list .card p {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 @-webkit-keyframes pulse-border {

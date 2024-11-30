@@ -3,11 +3,21 @@
 
 
 .form-section {
+    padding: 100px 0;
+    .title{
+        color: $primary;
+    }
+    p{
+        font-size: 18px;
+    }
+    .info{
+        margin-bottom: 100px;
+        max-width: 90%;
+    }
     .inner-form {
-        margin-top: 50px;
         background-color: $primary;
         padding: 30px 20px;
-        border-radius: 8px;
+        border-radius: 0;
 
         .title {
             color: #fff;
@@ -32,6 +42,10 @@
             }
 
         }
+        textarea{
+            height: 100px;
+            resize: none;
+        }
 
         .form-select {
             padding-left: 5px;
@@ -50,6 +64,24 @@
     }
 }
 
+.minland-list{
+    padding-bottom: 100px;
+    .row{
+        row-gap: 30px;
+    }
+    .card{
+        border: none;
+        text-align: center;
+        strong{
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+
 .minland-details {
     padding-top: 80px;
     padding-bottom: 100px;
@@ -58,7 +90,7 @@
         .title {
             color: $primary;
             max-width: max-content;
-            margin: auto;
+           
             margin-bottom: 20px;
 
             @include min(992) {
@@ -68,11 +100,9 @@
 
         p {
             font-size: 18px;
-            margin: auto;
             max-width: max-content;
 
             @include min(992) {
-                margin: auto;
                 margin-bottom: 50px;
             }
         }
@@ -119,7 +149,7 @@
         }
 
         p {
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 40px;
         }
     }
@@ -141,9 +171,12 @@
 
     p {
         font-size: 18px;
-        max-width: 740px;
         margin: auto;
         text-align: center;
+
+        &+p{
+            margin-top: 20px;   
+        }
 
     }
 
@@ -196,6 +229,7 @@
     }
     a{
         padding-left: 0;
+        font-size: 16px;
     }
 
     .row {
@@ -233,3 +267,82 @@
     }
 }
 
+.minland-process{
+    .title {
+        color: $primary;
+        max-width: 90%;
+      
+        margin-bottom: 20px;
+
+        @include min(992) {
+            margin-bottom: 25px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+
+    }
+}
+
+.offshore-lisence{
+    .title {
+        color: $primary;
+        max-width: max-content;
+       margin: auto;
+        margin-bottom: 20px;
+
+        @include min(992) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.freezone-tab{
+    .title {
+        color: $primary;
+        max-width: max-content;
+       margin: auto;
+        margin-bottom: 20px;
+
+        @include min(992) {
+            margin-bottom: 25px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        margin: auto;
+        max-width: max-content;
+
+        @include min(992) {
+            margin-bottom: 50px;
+        }
+    }
+  .lists{
+    .nav-tabs{
+        background-color: #A66E38;
+        justify-content: space-between;
+
+        .nav-item{
+            .nav-link{
+                padding: 30px;
+                border-radius: 0;
+                border: none;
+                background-color: transparent;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                &.active{
+                    background-color: $third-color;
+                }
+            }
+        }
+    }
+    .tab-content{
+        background-color: #E9EFEC;
+        margin-top: 15px;
+    }
+  }
+}
