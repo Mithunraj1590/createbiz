@@ -10,9 +10,6 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    background-image: url(./../images/business/banner.jpg);
-    background-position: center center;
-    background-size: cover;
     text-align: center;
     &::after{
         background: #000000 none repeat scroll 0 0;
@@ -24,6 +21,19 @@
         top: 0;
         width: 100%;
         z-index: -1;
+    }
+    .figure{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
     }
 
     .title {
