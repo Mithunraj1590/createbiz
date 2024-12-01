@@ -171,8 +171,8 @@ document.querySelectorAll('.menu-title').forEach((title) => {
 
   const swiper = new Swiper('.swiper', {
     loop: true,
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 6,
+    spaceBetween: 20,
     direction: 'horizontal', 
     loop: true, 
     autoplay: {

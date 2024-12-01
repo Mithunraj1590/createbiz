@@ -215,6 +215,10 @@
             border: 10px solid $secondary-color;
             border-radius: 100%;
             margin-bottom: 20px;
+            overflow: hidden;
+            img{
+
+            }
         }
         p{
             font-size: 18px;
@@ -249,9 +253,15 @@
            margin-top: 50px;
            .card{
             border: none;
+            text-align: center;
+            span{
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
             p{
-                font-size: 18px;
-                font-weight: 500;
+                font-size: 22px;
+                line-height: 30px;
+                font-weight: 600;
             }
            }
     }

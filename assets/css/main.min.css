@@ -9881,6 +9881,10 @@ button {
   z-index: 1;
 }
 
+p {
+  color: #000;
+}
+
 select.default {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -11065,6 +11069,9 @@ body.show-menu .mob-btn span + span + span {
   --width-container: 1200px;
 }
 
+.customers {
+  padding-bottom: 50px;
+}
 .customers .title {
   color: #013346;
   max-width: -webkit-max-content;
@@ -11094,7 +11101,6 @@ body.show-menu .mob-btn span + span + span {
 }
 .customers .swiper-slide {
   margin-bottom: 30px;
-  height: 50px;
 }
 
 .mainfaq {

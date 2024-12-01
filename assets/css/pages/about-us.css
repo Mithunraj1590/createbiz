@@ -219,6 +219,7 @@
   border: 10px solid #29B574;
   border-radius: 100%;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .team .card p {
   font-size: 18px;
@@ -255,10 +256,16 @@
 }
 .about-choose .choose-list .card {
   border: none;
+  text-align: center;
+}
+.about-choose .choose-list .card span {
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 .about-choose .choose-list .card p {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
 }
 
 @-webkit-keyframes pulse-border {
