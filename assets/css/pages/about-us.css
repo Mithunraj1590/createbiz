@@ -191,12 +191,26 @@
 }
 .team .card .pill {
   position: absolute;
-  top: 20px;
-  right: 30%;
-  width: 30px;
-  height: 30px;
+  top: 10px;
+  right: 26%;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
-  background-color: #000;
+  border: 3px solid #0077B5;
+  background-color: #0077B5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.team .card .pill i {
+  font-size: 25px;
+  color: #fff;
 }
 .team .card figure {
   width: 150px;
@@ -210,6 +224,7 @@
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
+  line-height: 20px;
 }
 .team .card span {
   font-size: 16px;

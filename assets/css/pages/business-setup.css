@@ -219,7 +219,18 @@
   color: #000;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.why-dubai .inner .info ul li span {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 30px;
 }
 
 .business-document {
@@ -254,12 +265,22 @@
 }
 .business-document .item-grid .item {
   padding: 50px 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px #cccccc;
           box-shadow: 0 0 10px #cccccc;
   height: 100%;
   text-align: center;
+  position: relative;
+}
+.business-document .item-grid .item .icon {
+  margin-bottom: 30px;
+}
+.business-document .item-grid .item .icon span {
+  font-size: 40px;
+  color: #F39321;
+  font-weight: 500;
 }
 .business-document .item-grid .item .info {
   text-align: center;
@@ -358,7 +379,7 @@
 .business-process .timeline-container::before {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 10px;
   width: 24px;
   height: 24px;
   background: var(--text-lighter);
