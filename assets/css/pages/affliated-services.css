@@ -79,6 +79,15 @@
   background-color: rgba(8, 106, 216, 0.07);
   border-radius: 100%;
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 992px) {
   .aff-services .service-list .card .icon {
@@ -88,6 +97,9 @@
             flex: 0 0 90px;
     height: 90px;
   }
+}
+.aff-services .service-list .card .icon i {
+  font-size: 30px;
 }
 .aff-services .service-list .card .info {
   padding-left: 0;
@@ -136,4 +148,44 @@
   .aff-services .service-list .btn-primary {
     display: none;
   }
+}
+
+.aff-imp {
+  padding: 100px 0;
+}
+.aff-imp .title {
+  color: #013346;
+  max-width: 600px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .aff-imp .title {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
+.aff-imp .titles {
+  color: #013346;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .aff-imp .titles {
+    margin-bottom: 30px;
+  }
+}
+.aff-imp p {
+  font-size: 18px;
+}
+.aff-imp ul li {
+  font-size: 18px;
+}
+.aff-imp ul li strong {
+  color: #013346;
+}
+.aff-imp ul li + li {
+  margin-top: 20px;
+}
+.aff-imp ul + p {
+  margin-bottom: 0;
 }

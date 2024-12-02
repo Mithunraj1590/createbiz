@@ -57,11 +57,18 @@
                 background-color: rgba(8, 106, 216, 0.07);
                 border-radius: 100%;
                 margin-bottom: 10px;
-
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                        
                 @include min(992) {
                     width: 90px;
                     flex: 0 0 90px;
                     height: 90px;
+                }
+
+                i{
+                    font-size: 30px;
                 }
             }
 
@@ -115,6 +122,48 @@
             }
 
            
+        }
+    }
+}
+
+.aff-imp{
+    padding: 100px 0;
+    .title {
+        color: $primary;
+        max-width: 600px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        @include min(992) {
+            margin: auto;
+            margin-bottom: 25px;
+        }
+    }
+    .titles {
+        color: $primary;
+        margin-bottom: 20px;
+
+
+        @include min(992) {
+        
+            margin-bottom: 30px;
+        }
+    }
+    p{
+       font-size: 18px;
+    }
+    ul{
+        li{
+            font-size: 18px;
+            strong{
+                color: $primary;
+            }
+            &+li{
+                margin-top: 20px;
+            }
+        }
+        &+p{
+            margin-bottom: 0;
         }
     }
 }
